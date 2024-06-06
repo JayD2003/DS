@@ -14,7 +14,7 @@ public class binarysearch {
             }else if(numbers[mid] < search){
                 start = mid+1;
             }else{
-                System.out.println("element found at"+" "+mid);
+                System.out.println("element found at"+mid);
                 break;
             }
         }
