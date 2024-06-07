@@ -9,12 +9,12 @@ public class insertionsort {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        int[] a = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
-        }
+        //int n = sc.nextInt();
+        int[] a = new int[]{5,4,1,3,2};
+        int n = a.length;
+        //for (int i = 0; i < n; i++) {
+        //    a[i] = sc.nextInt();
+        //}
         
         for (int i = 1; i < n; i++) {
             int x = a[i];
@@ -23,6 +23,7 @@ public class insertionsort {
             while (j >= 0 && x < a[j]) {
                 a[j + 1] = a[j];
                 j--;
+                System.out.println(a[j+1]+" "+(j+1)+" "+x);
             }
 
             a[j + 1] = x;
